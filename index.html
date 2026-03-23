@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P03 - Portfolio of Jihye Kim</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="main.css" rel="stylesheet">
+
+    <header>
+      <h1 class="header-title">P03 - Portfolio of Jihye Kim</h1>
+      <p class="header-paragraph">A basic template for building my portfolio<a class = "inTextLink" href="#">my own style guides</a>, to be utilized in the future.</p>
+
+  </header>
+
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- In-text Link -->
+      <section class="element">
+        <h3>In-text Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>a</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;This is a paragraph with an &lt;a class = "inTextLink" href="#"&gt;in-text link&lt;/a&gt; inside it.&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>This is a paragraph with an <a class = "inTextLink" href="#">in-text  link</a> inside it.</p>
+      </section>
+
+
+      <!-- Navigation Link -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+      </section>
+
+
+      <!-- Default Button -->
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-submit, .button-reset</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-reset"&gt;Reset Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-submit" href="#">Submit Button</a>
+        <a class="button-reset" href="#">Reset Button</a>
+
+      </section>
+
+
+      <!-- Text Input Field with Label-->
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>input[type="text"], label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;label for="name"&gt;Name:&lt;/label&gt;
+          &lt;input type="text" id="name" name="name"&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input class="text-input" type="text" id="name" name="name">
+        </div>
+      </section>
+
+
+      <!-- Radio Button Input Field with Label -->
+      <section class="element">
+        <h3>Radio Button Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>input[type="radio"], label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;input type="radio" id="pickup" name="delivery"&gt;
+          &lt;label for="pickup"&gt;Pick up in store&lt;/label&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="form-field">
+          <input type="radio" id="pickup" name="delivery">
+          <label for="pickup">Pick up in store</label>
+        </div>
+      </section>
+
+
+      <!-- Image as a Link -->
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>a img</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#"&gt;&lt;img src="UnicornThemeCake.jpg" alt="UnicornThemeCake.jpg"&gt;&lt;/a&gt;</code>
+        
+        <h4>Rendered element:</h4>
+        <a class = "imageLink" href="#"><img src="UnicornThemeCake.jpg" alt="A unicorn cake with cute decorations"></a>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <!-- Headings -->
+      <section class="element">
+      <h3>Headings</h3>
+
+      <h4>CSS selector:</h4>
+      <p>h1, h2, h3, h4, h5, p</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;h1&gt;Heading Level 1&lt;/h1&gt;
+        &lt;h2&gt;Heading Level 2&lt;/h2&gt;
+        &lt;h3&gt;Heading Level 3&lt;/h3&gt;
+        &lt;h4&gt;Heading Level 4&lt;/h4&gt;
+        &lt;h5&gt;Heading Level 5&lt;/h5&gt;
+        &lt;p&gt;Paragraph&lt;/p&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <h2>Heading Level 1</h2>
+      <h2>Heading Level 2</h2>
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <h5>Heading Level 5</h5>
+      <p>Paragraphs</p>
+      </section>
+
+
+      <!-- Paragraphs -->
+      <section class="element">
+      <h3>Paragraphs</h3>
+
+      <h4>CSS selector:</h4>
+      <p>p</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;p&gt; A basic template for building my own style guides, to be utilized in the future.
+        This is a paragraph for the paragraph element section!
+        &lt;/p&gt;
+      </code>
+
+      <h4>Rendered element:
+      </h4>
+      <p> A basic template for building my own style guides, to be utilized in the future.
+        This is a paragraph for the paragraph element section!
+      </p>
+      </section>
+
+
+      <!-- Numbered Lists -->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol, li</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ol&gt;
+            &lt;li&gt;Choose a cake type&lt;/li&gt;
+            &lt;li&gt;Select / Customize your design&lt;/li&gt;
+            &lt;li&gt;Review & checkout&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Choose a cake type</li>
+          <li>Select / Customize your design</li>
+          <li>Review & checkout</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <nav class="main-nav">
+        <a class="home-logo-img" href="index.html"><img src="Home.png" alt="Home logo"></a>
+        <a href="product-listing.html">Products</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+        <a class="cart-logo-img" href="checkout.html"><img src="Cart.png" alt="Cart logo"></a>
+      </nav>
+
+      <h3 class="main-nav-tutorial">How to order the perfect cake from our website</h3>
+      <ol>
+        <li>Choose a cake type</li>
+        <li>Select / Customize your design</li>
+        <li>Review & checkout</li>
+      </ol>
+      </section>
+
+      <section class="element">
+        <h3>Products Listing</h3>
+        <div class="products-container">
+          <article>
+            <a class = "product-listing-img" href="Cherry_Blossom_Girl_Cake.html">
+              <img src="Cherry_Blossom_Girl_Cake.png" alt="Pink Cherry Blossom Girl Reaching the Cake">
+            </a>
+            <h4 class="product-name">Cherry Blossom Girl Cake</h4>
+            <p class="product-price">$65</p>
+          <a class="button-nav product viewing" href="#">View Details</a>
+          </article>
+
+          <article>
+            <a class="product-listing-img" href="products.html">
+              <img src="Romantic_Strawberry_Cake.png" alt="Scrumptious Red White Strawberry Cake Cake">
+            </a>
+            <h4 class="product-name">Romantic Strawberry Cake</h4>
+            <p class="product-price">$50</p>
+            <a class="button-nav product viewing" href="#">View Details</a>
+         </article>
+
+          <article>
+            <a class="product-listing-img" href="products.html">
+              <img src="Unicorn_Themed_Cake.jpg" alt="A Cute Unicorn Themed Cake">
+            </a>
+            <h4 class="product-name">Unicorn Themed Cake</h4>
+            <p class="product-price">$70</p>
+            <a class="button-nav product viewing" href="#">View Details</a>
+          </article>
+        </div>
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <!-- <section class="element"> -->
+
+    <section id="brand-description">
+      <h3 class="additional-description"> Career Description</h3>
+        <p class="additional-description">
+          I am interested in designing user-centered digital products
+          by analyzing user experience data and applying insights to
+          improve existing and new systems. My approach is
+          evidence-focused, combining UI/UX analysis with visual design
+          to create meaningful and effective solutions.
+        </p>
+    </section>
+
+    <section>
+      <h3 class="additional-description">Colour palette option 1</h3>
+      <img class="fixed-image wide" src="img/ColourpaletteOption1.png" alt="Colour palette showcasing colours used for this website">
+    </section>
+
+    <section>
+      <h3 class="additional-description">Colour palette option 2</h3>
+      <img class="fixed-image wide" src="img/ColourpaletteOption2.png" alt="Colour palette showcasing colours used for this website">
+    </section>
+
+    <section id="font-description">
+      <h3 class="additional-description">Fonts</h3>
+      <img class="fixed-image font" src="img/Fonts.png" alt="Font image to showcase which fonts are used in this webpage.">
+    </section>   
+
+    <section id="art-direction">
+      <h3 class="additional-description">Art Direction</h3>
+        <p class="additional-description">
+          Clean, style direction-showing, descriptive, and efficient.
+        </p>
+    </section> 
+
+    <section>
+      <h3 class="additional-description">Potential Imagery Set 1</h3>
+      <img class="fixed-image tall" src="img/ideation1.png" alt="Main page planned option 1">
+    </section>
+
+    <section>
+      <h3 class="additional-description">Potential Imagery Set 2</h3>
+      <img class="fixed-image tall" src="img/ideation2.png" alt="Main page planned option 1">
+    </section>
+
+    <!-- <section id="citations">
+      <h2>Citations</h2>
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+    </section>     -->
+  </body>
+</html>
