@@ -11,28 +11,28 @@
     <link href="main.css" rel="stylesheet">
 
     <header>
-      <h1 class="header-title">P03 - Portfolio of Jihye Kim</h1>
-      <p class="header-paragraph">A basic template for building my portfolio<a class = "inTextLink" href="#">my own style guides</a>, to be utilized in the future.</p>
+      <h1 class="header-title">P03 - Portfolio Styleguide</h1>
+      <p class="header-paragraph">A basic template for building my portfolio <a class = "inTextLink" href="#">my own style guides</a>, to be utilized in the future.</p>
 
   </header>
 
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
 
-      <!-- In-text Link -->
-      <section class="element">
-        <h3>In-text Link</h3>
+        <!-- In-text Link -->
+        <section class="element">
+          <h3>In-text Link</h3>
 
-        <h4>CSS selector:</h4>
-        <p>a</p>
+          <h4>CSS selector:</h4>
+          <p>a</p>
 
-        <h4>Sample code:</h4>
-        <code>&lt;p&gt;This is a paragraph with an &lt;a class = "inTextLink" href="#"&gt;in-text link&lt;/a&gt; inside it.&lt;/p&gt;</code>
+          <h4>Sample code:</h4>
+          <code>&lt;p&gt; Feel free to connect with me on my &lt;a class="inTextLink" href="https://www.linkedin.com/in/jihye-kim-528b58266/?locale=en_US"&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;</code>
 
-        <h4>Rendered element:</h4>
-        <p>This is a paragraph with an <a class = "inTextLink" href="#">in-text  link</a> inside it.</p>
+          <h4>Rendered element:</h4>
+          <p> Feel free to connect with me on my <a class="inTextLink" href="https://www.linkedin.com/in/jihye-kim-528b58266/?locale=en_US">LinkedIn</a>.</p>
+        </section>
       </section>
-
 
       <!-- Navigation Link -->
       <section class="element">
@@ -49,20 +49,20 @@
       </section>
 
 
-      <!-- Default Button -->
+      <!-- Twitter/Resume Button -->
       <section class="element">
-        <h3>Submit/Reset Buttons</h3>
+        <h3>Twitter/Resume Buttons</h3>
 
         <h4>CSS selector:</h4>
-        <p>.button-submit, .button-reset</p>
+        <p>.twitter-link, .resume-link</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
-        <code>&lt;a href="#" class="button-reset"&gt;Reset Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="twitter-link"&gt;Twitter&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="resume-link"&gt;Resume&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="button-submit" href="#">Submit Button</a>
-        <a class="button-reset" href="#">Reset Button</a>
+        <a class="twitter-link" href="#">Twitter</a>
+        <a class="resume-link" href="#">Resume</a>
 
       </section>
 
@@ -88,75 +88,86 @@
       </section>
 
 
-      <!-- Radio Button Input Field with Label -->
-      <section class="element">
-        <h3>Radio Button Input Field with Label</h3>
+	<!-- Radio Button Input Field with Label -->
+	<section class="element">
+		<h3>Contact Purpose</h3>
 
-        <h4>CSS selector:</h4>
-        <p>input[type="radio"], label</p>
+		<h4>CSS selector:</h4>
+		<p>input[type="radio"], label</p>
 
-        <h4>Sample code:</h4>
-        <code>
-          &lt;input type="radio" id="pickup" name="delivery"&gt;
-          &lt;label for="pickup"&gt;Pick up in store&lt;/label&gt;
-        </code>
+		<h4>Sample code:</h4>
+		<code>&lt;input type="radio" id="collab" name="contact"&gt;&lt;label for="collab"&gt;Interested in working together&lt;/label&gt;
+            &lt;input type="radio" id="hire" name="contact"&gt;
+            &lt;label for="hire"&gt;Interested in hiring&lt;/label&gt;
+		</code>
 
-        <h4>Rendered element:</h4>
-        <div class="form-field">
-          <input type="radio" id="pickup" name="delivery">
-          <label for="pickup">Pick up in store</label>
-        </div>
-      </section>
+		<h4>Rendered element:</h4>
+		<div class="form-field">
+			<input type="radio" id="collab" name="contact">
+			<label for="collab">Interested in working together</label>
+		</div>
+
+		<div class="form-field">
+			<input type="radio" id="hire" name="contact">
+			<label for="hire">Interested in hiring</label>
+		</div>
+	</section>
 
 
-      <!-- Image as a Link -->
-      <section class="element">
-        <h3>Image as a Link</h3>
+	<!-- Image as a Link -->
+	<section class="element">
+		<h3>Image as a Link</h3>
 
-        <h4>CSS selector:</h4>
-        <p>a img</p>
+		<h4>CSS selector:</h4>
+		<p>a img</p>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#"&gt;&lt;img src="UnicornThemeCake.jpg" alt="UnicornThemeCake.jpg"&gt;&lt;/a&gt;</code>
-        
-        <h4>Rendered element:</h4>
-        <a class = "imageLink" href="#"><img src="UnicornThemeCake.jpg" alt="A unicorn cake with cute decorations"></a>
-      </section>
+		<h4>Sample code:</h4>
+		<code>
+            &lt;a class="imageLink" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/extend-study-permit/when-to-apply.html"&gt;
+	        &lt;img src="img/studypermit.png" alt="Study permit extension webpage"&gt;
+            &lt;/a&gt;
+		</code>
+		
+		<h4>Rendered element:</h4>
+		<a class="imageLink" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/extend-study-permit/when-to-apply.html">
+			<img src="img/studypermit.png" alt="Study permit extension webpage">
+		</a>
+	</section>
 
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
+	<!-- TEXT ELEMENTS SECTION -->
+	<section id="text_elements">
+		<h2>Text Elements</h2>
 
-      <!-- Headings -->
-      <section class="element">
-      <h3>Headings</h3>
+		<section class="element">
+			<h3>Headings</h3>
 
-      <h4>CSS selector:</h4>
-      <p>h1, h2, h3, h4, h5, p</p>
+			<h4>CSS selector:</h4>
+			<p>h1, h2, h3, h4, p</p>
 
-      <h4>Sample code:</h4>
-      <code>
-        &lt;h1&gt;Heading Level 1&lt;/h1&gt;
-        &lt;h2&gt;Heading Level 2&lt;/h2&gt;
-        &lt;h3&gt;Heading Level 3&lt;/h3&gt;
-        &lt;h4&gt;Heading Level 4&lt;/h4&gt;
-        &lt;h5&gt;Heading Level 5&lt;/h5&gt;
-        &lt;p&gt;Paragraph&lt;/p&gt;
-      </code>
+			<h4>Sample code:</h4>
+			<code>
+                &lt;h1&gt;Heading Level 1&lt;/h1&gt;
+                &lt;h2&gt;Heading Level 2&lt;/h2&gt;
+                &lt;h3&gt;Heading Level 3&lt;/h3&gt;
+                &lt;h4&gt;Heading Level 4&lt;/h4&gt;
+                &lt;p&gt;Paragraph&lt;/p&gt;
+			</code>
 
-      <h4>Rendered element:</h4>
-      <h2>Heading Level 1</h2>
-      <h2>Heading Level 2</h2>
-      <h3>Heading Level 3</h3>
-      <h4>Heading Level 4</h4>
-      <h5>Heading Level 5</h5>
-      <p>Paragraphs</p>
-      </section>
+			<h4>Rendered element:</h4>
+
+			<h1>H1: Styrene B Trial 100px (Bold)</h1>
+			<h2>H2: Styrene B Trial 60px (Regular)</h2>
+			<h3>H3: Styrene B Trial 50px (Regular)</h3>
+			<h4 class="mono">H4: GT America Mono Trial 20px (Md)</h4>
+			<p>P: Styrene B Trial 22px (Regular)</p>
+
+		</section>
+	</section>
 
 
       <!-- Paragraphs -->
@@ -168,42 +179,44 @@
 
       <h4>Sample code:</h4>
       <code>
-        &lt;p&gt; A basic template for building my own style guides, to be utilized in the future.
-        This is a paragraph for the paragraph element section!
+        &lt;p&gt; I would like to work for companies that need a unique and
+        effective website and advanced UI/UX designs for their products, content,
+        and advertisements.
         &lt;/p&gt;
       </code>
 
       <h4>Rendered element:
       </h4>
-      <p> A basic template for building my own style guides, to be utilized in the future.
-        This is a paragraph for the paragraph element section!
+      <p> I would like to work for companies that need a unique and
+        effective website and advanced UI/UX designs for their products, content,
+        and advertisements.
       </p>
       </section>
 
 
-      <!-- Numbered Lists -->
-      <section class="element">
-        <h3>Numbered Lists</h3>
+	<!-- Numbered Lists -->
+	<section class="element">
+		<h3>My Design Process</h3>
 
-        <h4>CSS selector:</h4>
-        <p>ol, li</p>
+		<h4>CSS selector:</h4>
+		<p>ol, li</p>
 
-        <h4>Sample code:</h4>
-        <code>
-          &lt;ol&gt;
-            &lt;li&gt;Choose a cake type&lt;/li&gt;
-            &lt;li&gt;Select / Customize your design&lt;/li&gt;
-            &lt;li&gt;Review & checkout&lt;/li&gt;
-          &lt;/ol&gt;
-        </code>
+		<h4>Sample code:</h4>
+		<code>
+            &lt;ol&gt;
+            &lt;li&gt;Research user needs and problems&lt;/li&gt;
+            &lt;li&gt;Create wireframes and user flows&lt;/li&gt;
+            &lt;li&gt;Design and refine UI/UX solutions&lt;/li&gt;
+            &lt;/ol&gt;
+		</code>
 
-        <h4>Rendered element:</h4>
-        <ol>
-          <li>Choose a cake type</li>
-          <li>Select / Customize your design</li>
-          <li>Review & checkout</li>
-        </ol>
-      </section>
+		<h4>Rendered element:</h4>
+		<ol>
+			<li>Research user needs and problems</li>
+			<li>Create wireframes and user flows</li>
+			<li>Design and refine UI/UX solutions</li>
+		</ol>
+	</section>
 
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
@@ -212,56 +225,44 @@
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-      <h2>Combined Elements</h2>
+    <h2>Combined Elements</h2>
 
       <section class="element">
-        <h3>Main Navigation</h3>
-        <nav class="main-nav">
-        <a class="home-logo-img" href="index.html"><img src="Home.png" alt="Home logo"></a>
-        <a href="product-listing.html">Products</a>
-        <a href="#">Events</a>
-        <a href="#">Contact</a>
-        <a class="cart-logo-img" href="checkout.html"><img src="Cart.png" alt="Cart logo"></a>
-      </nav>
+      <h3 class="main-nav-tutorial">Process Analysis for Pet Adoption Website Project</h3>
+    
+      <p>
+        Project 04, Pet Adoption Website, is a project I participated in as the final project for the
+        IAT 235 course. I worked with team members Mila, Max, and Miranda. I was responsible for complementing
+        the webpage designs by maintaining consistency with the wireframes, as well as building the main
+        navigation pages using HTML and CSS. We actively used GitHub throughout the process to track each
+        other’s work, since all four of us were working both collaboratively and individually at the same time.
+      </p>
 
-      <h3 class="main-nav-tutorial">How to order the perfect cake from our website</h3>
-      <ol>
-        <li>Choose a cake type</li>
-        <li>Select / Customize your design</li>
-        <li>Review & checkout</li>
-      </ol>
-      </section>
+      <p>The stages of work included:</p>
 
-      <section class="element">
-        <h3>Products Listing</h3>
-        <div class="products-container">
-          <article>
-            <a class = "product-listing-img" href="Cherry_Blossom_Girl_Cake.html">
-              <img src="Cherry_Blossom_Girl_Cake.png" alt="Pink Cherry Blossom Girl Reaching the Cake">
-            </a>
-            <h4 class="product-name">Cherry Blossom Girl Cake</h4>
-            <p class="product-price">$65</p>
-          <a class="button-nav product viewing" href="#">View Details</a>
-          </article>
+      <ul>
+        <li>Webpage design ideation</li>
+        <li>Refining the design and integrating UI/UX concepts from IAT 201</li>
+        <li>Creating the initial structure of the website as a team</li>
+        <li>Each group member completing a specific webpage</li>
+      </ul>
 
-          <article>
-            <a class="product-listing-img" href="products.html">
-              <img src="Romantic_Strawberry_Cake.png" alt="Scrumptious Red White Strawberry Cake Cake">
-            </a>
-            <h4 class="product-name">Romantic Strawberry Cake</h4>
-            <p class="product-price">$50</p>
-            <a class="button-nav product viewing" href="#">View Details</a>
-         </article>
+      <p>
+        One of the main challenges we encountered was that our approaches to User Interaction and User Experience
+        were often influenced by our individual perspectives. We addressed this by openly sharing our ideas,
+        researching evidence to support design decisions, and expanding our understanding by considering multiple
+        types of users.
 
-          <article>
-            <a class="product-listing-img" href="products.html">
-              <img src="Unicorn_Themed_Cake.jpg" alt="A Cute Unicorn Themed Cake">
-            </a>
-            <h4 class="product-name">Unicorn Themed Cake</h4>
-            <p class="product-price">$70</p>
-            <a class="button-nav product viewing" href="#">View Details</a>
-          </article>
-        </div>
+        Through this project, I learned how to effectively collaborate with others to construct a cohesive website.
+        I improved my ability to communicate with team members who had different design perspectives, and to
+        support design decisions with evidence-based reasoning.
+
+        I would present each step of this process to different audiences by clearly summarizing the goals,
+        challenges, and outcomes of each stage. This would be supported with relevant visual examples that demonstrate
+        how each step contributed to the overall project.
+      </p>
+
+      <img src="img/ProcessAnalysis1.png" alt="Process Analysis Artifact">
       </section>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
@@ -271,13 +272,22 @@
     <!-- <section class="element"> -->
 
     <section id="brand-description">
-      <h3 class="additional-description"> Career Description</h3>
+      <h3 class="additional-description"> Bio</h3>
         <p class="additional-description">
-          I am interested in designing user-centered digital products
-          by analyzing user experience data and applying insights to
-          improve existing and new systems. My approach is
-          evidence-focused, combining UI/UX analysis with visual design
-          to create meaningful and effective solutions.
+          I am interested in designing user-centered digital products by analyzing user experience data
+          and applying insights to improve both existing and new systems. My approach is evidence-focused,
+          combining UI/UX analysis with visual and graphic design to create meaningful, functional,
+          and aesthetically pleasing solutions. I am particularly drawn to projects that challenge me to
+          blend creativity with analytical reasoning, allowing me to explore design processes deeply and
+          refine interfaces based on real user insights.
+
+          I aim to work for companies that value innovative and effective design solutions—whether
+          in digital products, websites, or visual content—and that foster a collaborative, communicative
+          environment where ideas can thrive. Through my portfolio, I showcase my design personality,
+          demonstrating a learning journey supported by strong design principles, attention to detail, and
+          a commitment to improving user experiences. I am motivated by opportunities to contribute as a
+          product designer, UI/UX analyst, content designer, or graphic designer, where I can combine
+          analytical thinking with creative problem-solving to produce impactful designs.
         </p>
     </section>
 
