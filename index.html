@@ -1,334 +1,119 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>P03 - Portfolio of Jihye Kim</title>
+<head>
+  <meta charset="utf-8">
+  <title>P03 - Portfolio of Jihye Kim</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <link href="main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
 
-    <header>
-      <h1 class="header-title">P03 - Portfolio Styleguide</h1>
-      <p class="header-paragraph">A basic template for building my portfolio <a class = "inTextLink" href="#">my own style guides</a>, to be utilized in the future.</p>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="#">JIHYE KIM</a>
+      </div>
 
+      <div class="nav-right">
+        <a href="#">Work</a>
+        <a href="about.html">About</a>
+        <a href="#">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <h1 class="header-title">Digital Product Designer</h1>
+    <p class="header-paragraph">Hi! My name is Jihye.</p>
   </header>
 
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
 
-        <!-- In-text Link -->
-        <section class="element">
-          <h3>In-text Link</h3>
-
-          <h4>CSS selector:</h4>
-          <p>a</p>
-
-          <h4>Sample code:</h4>
-          <code>&lt;p&gt; Feel free to connect with me on my &lt;a class="inTextLink" href="https://www.linkedin.com/in/jihye-kim-528b58266/?locale=en_US"&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;</code>
-
-          <h4>Rendered element:</h4>
-          <p> Feel free to connect with me on my <a class="inTextLink" href="https://www.linkedin.com/in/jihye-kim-528b58266/?locale=en_US">LinkedIn</a>.</p>
-        </section>
-      </section>
-
-      <!-- Navigation Link -->
-      <section class="element">
-        <h3>Navigation Link</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
-
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
-      </section>
-
-
-      <!-- Twitter/Resume Button -->
-      <section class="element">
-        <h3>Twitter/Resume Buttons</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.twitter-link, .resume-link</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="twitter-link"&gt;Twitter&lt;/a&gt;</code>
-        <code>&lt;a href="#" class="resume-link"&gt;Resume&lt;/a&gt;</code>
-
-        <h4>Rendered element:</h4>
-        <a class="twitter-link" href="#">Twitter</a>
-        <a class="resume-link" href="#">Resume</a>
-
-      </section>
-
-
-      <!-- Text Input Field with Label-->
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
-
-        <h4>CSS selector:</h4>
-        <p>input[type="text"], label</p>
-
-        <h4>Sample code:</h4>
-        <code>
-          &lt;label for="name"&gt;Name:&lt;/label&gt;
-          &lt;input type="text" id="name" name="name"&gt;
-        </code>
-
-        <h4>Rendered element:</h4>
-        <div class="form-field">
-          <label for="name">Name:</label>
-          <input class="text-input" type="text" id="name" name="name">
-        </div>
-      </section>
-
-
-	<!-- Radio Button Input Field with Label -->
-	<section class="element">
-		<h3>Contact Purpose</h3>
-
-		<h4>CSS selector:</h4>
-		<p>input[type="radio"], label</p>
-
-		<h4>Sample code:</h4>
-		<code>&lt;input type="radio" id="collab" name="contact"&gt;&lt;label for="collab"&gt;Interested in working together&lt;/label&gt;
-            &lt;input type="radio" id="hire" name="contact"&gt;
-            &lt;label for="hire"&gt;Interested in hiring&lt;/label&gt;
-		</code>
-
-		<h4>Rendered element:</h4>
-		<div class="form-field">
-			<input type="radio" id="collab" name="contact">
-			<label for="collab">Interested in working together</label>
-		</div>
-
-		<div class="form-field">
-			<input type="radio" id="hire" name="contact">
-			<label for="hire">Interested in hiring</label>
-		</div>
-	</section>
-
-
-	<!-- Image as a Link -->
-	<section class="element">
-		<h3>Image as a Link</h3>
-
-		<h4>CSS selector:</h4>
-		<p>a img</p>
-
-		<h4>Sample code:</h4>
-		<code>
-            &lt;a class="imageLink" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/extend-study-permit/when-to-apply.html"&gt;
-	        &lt;img src="img/studypermit.png" alt="Study permit extension webpage"&gt;
-            &lt;/a&gt;
-		</code>
-		
-		<h4>Rendered element:</h4>
-		<a class="imageLink" href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/extend-study-permit/when-to-apply.html">
-			<img src="img/studypermit.png" alt="Study permit extension webpage">
-		</a>
-	</section>
-
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-	<!-- TEXT ELEMENTS SECTION -->
-	<section id="text_elements">
-		<h2>Text Elements</h2>
-
-		<section class="element">
-			<h3>Headings</h3>
-
-			<h4>CSS selector:</h4>
-			<p>h1, h2, h3, h4, p</p>
-
-			<h4>Sample code:</h4>
-			<code>
-                &lt;h1&gt;Heading Level 1&lt;/h1&gt;
-                &lt;h2&gt;Heading Level 2&lt;/h2&gt;
-                &lt;h3&gt;Heading Level 3&lt;/h3&gt;
-                &lt;h4&gt;Heading Level 4&lt;/h4&gt;
-                &lt;p&gt;Paragraph&lt;/p&gt;
-			</code>
-
-			<h4>Rendered element:</h4>
-
-			<h1>H1: Styrene B Trial 100px (Bold)</h1>
-			<h2>H2: Styrene B Trial 60px (Regular)</h2>
-			<h3>H3: Styrene B Trial 50px (Regular)</h3>
-			<h4 class="mono">H4: GT America Mono Trial 20px (Md)</h4>
-			<p>P: Styrene B Trial 22px (Regular)</p>
-
-		</section>
-	</section>
-
-
-      <!-- Paragraphs -->
-      <section class="element">
-      <h3>Paragraphs</h3>
-
-      <h4>CSS selector:</h4>
-      <p>p</p>
-
-      <h4>Sample code:</h4>
-      <code>
-        &lt;p&gt; I would like to work for companies that need a unique and
-        effective website and advanced UI/UX designs for their products, content,
-        and advertisements.
-        &lt;/p&gt;
-      </code>
-
-      <h4>Rendered element:
-      </h4>
-      <p> I would like to work for companies that need a unique and
-        effective website and advanced UI/UX designs for their products, content,
-        and advertisements.
-      </p>
-      </section>
-
-
-	<!-- Numbered Lists -->
-	<section class="element">
-		<h3>My Design Process</h3>
-
-		<h4>CSS selector:</h4>
-		<p>ol, li</p>
-
-		<h4>Sample code:</h4>
-		<code>
-            &lt;ol&gt;
-            &lt;li&gt;Research user needs and problems&lt;/li&gt;
-            &lt;li&gt;Create wireframes and user flows&lt;/li&gt;
-            &lt;li&gt;Design and refine UI/UX solutions&lt;/li&gt;
-            &lt;/ol&gt;
-		</code>
-
-		<h4>Rendered element:</h4>
-		<ol>
-			<li>Research user needs and problems</li>
-			<li>Create wireframes and user flows</li>
-			<li>Design and refine UI/UX solutions</li>
-		</ol>
-	</section>
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-    <h2>Combined Elements</h2>
-
-      <section class="element">
-      <h3 class="main-nav-tutorial">Process Analysis for Pet Adoption Website Project</h3>
-    
-      <p>
-        Project 04, Pet Adoption Website, is a project I participated in as the final project for the
-        IAT 235 course. I worked with team members Mila, Max, and Miranda. I was responsible for complementing
-        the webpage designs by maintaining consistency with the wireframes, as well as building the main
-        navigation pages using HTML and CSS. We actively used GitHub throughout the process to track each
-        other’s work, since all four of us were working both collaboratively and individually at the same time.
-      </p>
-
-      <p>The stages of work included:</p>
-
-      <ul>
-        <li>Webpage design ideation</li>
-        <li>Refining the design and integrating UI/UX concepts from IAT 201</li>
-        <li>Creating the initial structure of the website as a team</li>
-        <li>Each group member completing a specific webpage</li>
-      </ul>
-
-      <p>
-        One of the main challenges we encountered was that our approaches to User Interaction and User Experience
-        were often influenced by our individual perspectives. We addressed this by openly sharing our ideas,
-        researching evidence to support design decisions, and expanding our understanding by considering multiple
-        types of users.
-
-        Through this project, I learned how to effectively collaborate with others to construct a cohesive website.
-        I improved my ability to communicate with team members who had different design perspectives, and to
-        support design decisions with evidence-based reasoning.
-
-        I would present each step of this process to different audiences by clearly summarizing the goals,
-        challenges, and outcomes of each stage. This would be supported with relevant visual examples that demonstrate
-        how each step contributed to the overall project.
-      </p>
-
-      <img src="img/ProcessAnalysis1.png" alt="Process Analysis Artifact">
-      </section>
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-
-
-    <!-- <section class="element"> -->
-
-    <section id="brand-description">
-      <h3 class="additional-description"> Bio</h3>
-        <p class="additional-description">
-          I am interested in designing user-centered digital products by analyzing user experience data
-          and applying insights to improve both existing and new systems. My approach is evidence-focused,
-          combining UI/UX analysis with visual and graphic design to create meaningful, functional,
-          and aesthetically pleasing solutions. I am particularly drawn to projects that challenge me to
-          blend creativity with analytical reasoning, allowing me to explore design processes deeply and
-          refine interfaces based on real user insights.
-
-          I aim to work for companies that value innovative and effective design solutions—whether
-          in digital products, websites, or visual content—and that foster a collaborative, communicative
-          environment where ideas can thrive. Through my portfolio, I showcase my design personality,
-          demonstrating a learning journey supported by strong design principles, attention to detail, and
-          a commitment to improving user experiences. I am motivated by opportunities to contribute as a
-          product designer, UI/UX analyst, content designer, or graphic designer, where I can combine
-          analytical thinking with creative problem-solving to produce impactful designs.
-        </p>
+    <!-- MAIN -->
+  <main>
+    <!-- projects section -->
+    <section id="projects">
+      <h2 class="side-label right">PROJECTS</h2>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-img"></div>
+
+          <div class="card-info">
+            <h3>PROJECT 01</h3>
+            <div class="hashtag">
+              <span>UI/UX Design</span>
+              <span>Web development</span>
+              <span>CSS</span>
+            </div>
+            <p>This is my portfolio for...</p>
+          </div>
+        </article>
+
+          <div class="card-info">
+            <h3>PROJECT 02</h3>
+            <div class="hashtag">
+              <span>UI/UX Design</span>
+              <span>Web development</span>
+              <span>CSS</span>
+            </div>
+            <p>This is my portfolio for...</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h3 class="additional-description">Colour palette option 1</h3>
-      <img class="fixed-image wide" src="img/ColourpaletteOption1.png" alt="Colour palette showcasing colours used for this website">
+    <!-- case studies section -->
+    <section id="projects">
+      <h2 class="side-label left">CASE STUDIES</h2>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-img"></div>
+
+          <div class="card-info">
+            <h3>CASE STUDY 01</h3>
+            <div class="hashtag">
+              <span>UI/UX Design</span>
+              <span>Web development</span>
+              <span>CSS</span>
+            </div>
+            <p>This is my case study for...</p>
+          </div>
+        </article>
+
+          <div class="card-info">
+            <h3>CASE STUDY 02</h3>
+            <div class="hashtag">
+              <span>UI/UX Design</span>
+              <span>Web development</span>
+              <span>CSS</span>
+            </div>
+            <p>This is my case study for...</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h3 class="additional-description">Colour palette option 2</h3>
-      <img class="fixed-image wide" src="img/ColourpaletteOption2.png" alt="Colour palette showcasing colours used for this website">
-    </section>
+  </main>
 
-    <section id="font-description">
-      <h3 class="additional-description">Fonts</h3>
-      <img class="fixed-image font" src="img/Fonts.png" alt="Font image to showcase which fonts are used in this webpage.">
-    </section>   
 
-    <section id="art-direction">
-      <h3 class="additional-description">Art Direction</h3>
-        <p class="additional-description">
-          Clean, style direction-showing, descriptive, and efficient.
-        </p>
-    </section> 
 
-    <section>
-      <h3 class="additional-description">Potential Imagery Set 1</h3>
-      <img class="fixed-image tall" src="img/ideation1.png" alt="Main page planned option 1">
-    </section>
 
-    <section>
-      <h3 class="additional-description">Potential Imagery Set 2</h3>
-      <img class="fixed-image tall" src="img/ideation2.png" alt="Main page planned option 1">
-    </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h2>Digital experiences, elevated.</h2>
+    <p>Let’s build something meaningful together...</p>
 
-    <!-- <section id="citations">
-      <h2>Citations</h2>
-      <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-      </ul>
-    </section>     -->
-  </body>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">Email</a>
+      <a href="#">Resume</a>
+    </div>
+  </footer>
+
+</body>
 </html>
