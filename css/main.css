@@ -1,122 +1,8 @@
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-section {
-  position: relative;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  padding: 4rem;
-}
-
-.card {
-  background: #ffffff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.card-img {
-  height: 300px;
-  background: #ccc;
-}
-
-.card-info {
-  background: #FFD0BD;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.tags span {
-  color: #E8B7A4;
-  font-size: 0.8rem;
-  transition: color 0.3s ease;
-}
-
-.card p {
-  color: #E8B7A4;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-
-/* .card:hover .card-img {
-  background: #aaa;  darker image?
-} */
-
-/* .card:hover .card-info {
-  background: #d6b19c; stronger peach?
-} */
-
-.card:hover .tags span {
-  color: #0012D7;
-}
-
-.card:hover p {
-  color: black;
-}
-
-.side-label {
-  position: absolute;
-  writing-mode: vertical-rl;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  opacity: 0.5;
-}
-
-.side-label.right {
-  right: 20px;
-  top: 50%;
-}
-
-.side-label.left {
-  left: 20px;
-  top: 50%;
-}
-
-
-.footer {
-  background: #6f7c5a;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.footer-links a {
-  margin: 0 1rem;
-  padding: 0.8rem 1.5rem;
-  background: white;
-  border-radius: 20px;
-  text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @font-face {
   font-family: "Styrene B";
@@ -124,14 +10,12 @@ section {
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Styrene B";
   src: url("fonts/StyreneB-Bold-Trial-BF63f6cbe9f13bb.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: "GT America Mono";
   src: url("fonts/GT-America-Mono-Medium-Trial.otf") format("opentype");
@@ -140,846 +24,300 @@ section {
 }
 
 body {
-  font-family: "Styrene B", sans-serif;
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
   background-color: #252D22;
   color: #ffffff;
 }
 
-.top-bar {
-  background-color: #f1cece72;
-  height: 4rem;
-
-  display: flex;
-  align-items: center;
-}
-
-.top-bar-inner {
-  width: 100%;
-  padding: 0 2.25rem 3rem;
-
-  font-size: 0.9rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.top-bar-inner a{
-  font-family: 'Questrial', Arial, Helvetica, sans-serif;
-  color: #433732;
-  margin-top: 2.5rem;
-}
-
-.header-title {
-  margin-left: 1rem;
-}
-
-.header-paragraph {
-  margin-left: 1rem;
-}
-
-section {
-  margin-bottom: 1.5rem;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
-}
-
-.element {
-  padding: 2rem;
-  border: 0.15rem solid #a77c78;
-  background-color: #f1cece33;
-  border-radius: 0.8rem;
-
-  max-width: 48rem;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.element p {
-  margin-bottom: 1.2rem;
-}
-
-.element ul {
-  margin: 1rem 0 1.5rem 0;
-  padding-left: 1.2rem;
-  list-style: none;
-}
-
-.element ul li {
-  position: relative;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
-.element ul li::before {
-  content: "–";
-  position: absolute;
-  left: -1rem;
-  color: #FAD867;
-}
-
-.element img {
-  display: block;
-  width: 100%;
-  max-width: 42rem;
-  height: auto;
-  margin: 2rem auto 0 auto;
-  border-radius: 0.5rem;
-  border: 0.08rem solid #ffffff40;
-}
-
 h1 {
   font-family: "Styrene B", sans-serif;
-  font-size: 60px;
+  font-size: 5rem;
   font-weight: 700;
-  margin: 0;
+  color: #ffffff;
+  line-height: 1.05;
 }
-
 h2 {
   font-family: "Styrene B", sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 400;
   color: #785141;
-  margin: 0;
+  line-height: 1.1;
 }
-
 h3 {
   font-family: "Styrene B", sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 400;
-  margin: 0;
+  color: #ffffff;
+  line-height: 1.1;
 }
-
-h4.mono {
+h4 {
+  font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+}
+h5 {
+  font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+}
+h6 {
   font-family: "GT America Mono", monospace;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: #1E40FF;
+  line-height: 1.4;
 }
-
 p {
   font-family: "Styrene B", sans-serif;
   font-size: 18px;
   font-weight: 400;
-}
-
-/* h1 {
-    font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.7rem;
-  margin-top: 3rem;
-  margin-left: 1rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin-top: 1rem;
-  font-family: "Helvetica", sans-serif;
-}
-
-h4 {
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-} */
-
-h5 {
-  font-size: 0.8rem;
-}
-
-/* p {
-  font-size: 0.8rem;
-  max-width: 50rem;
-  width: 100%;
-} */
-
-ol, li {
-  font-family: "Arial", sans-serif;
-  font-size: 0.9rem;
-}
-
-.imageLink img {
-  width: 20rem;
-  height: 20rem;
-  object-fit: cover;
-  display: block;
-}
-
-
-.additional-description {
-  margin-left: 1rem;
-}
-
-code {
-  color: #433732;
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-}
-
-.form-field {
-  margin-top: 1rem;
-}
-
-.form-field label {
-  font-weight: bold;
-}
-
-.text-input {
-  width: 100%;
-  max-width: 10rem;
-  padding: 0.5rem 0.6rem;
-  border: 1px solid #ffffff;
-  border-radius: 0.2rem;
-}
-
-.text-input:hover {
-  border-color: #A77C78;
-}
-
-.text-input:focus {
-  border-color: #0077ff;
-  box-shadow: 0 0 3px rgba(0, 119, 255, 0.5);
-  outline: none;
-}
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-
-.inTextLink {
-  color: #FAD867;
-  text-decoration: underline;
-  transition: color 0.2s ease, background-color 0.2s ease; 
-}
-
-.inTextLink:hover,
-.inTextLink:focus {
+  line-height: 25px;
   color: #ffffff;
-  background-color: #FAD867;
-  text-decoration: none;
-  outline: none;
 }
 
-.imageLink:hover img {
-  box-shadow: 0 0 10px 8px #FAD867;
-}
-
-.imageLink:focus img {
-  box-shadow: none;
-  opacity: 0.7;
-  transform: scale(1.03);
-}
-
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-
-
-
-/* 
-  COMBINED ELEMENTS -------------------
-*/
-
-.home-logo-img img,
-.cart-logo-img img {
-  width: 1.9rem;
-  height: 1.9rem;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  color: #433732;
-}
-
-.main-nav a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #433732;
-  transition: color 0.3s ease;
-}
-
-.main-nav a:hover {
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-.main-nav a:focus {
-  text-decoration: none;
-  font-weight: 700;
-  transition: color 0.3s ease;
-}
-
-.main-nav a img {
-  transition: all 0.3s ease;
-  border-bottom: 3px solid transparent;
-}
-
-.main-nav a img:hover {
-  border-bottom:1px solid #433732;
-}
-
-.main-nav a img:active {
-  transform: scale(1.4);
-  border-bottom: none;
-}
-
-.main-nav-tutorial {
-  margin-top: 3rem;
-}
-
-.products-container {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.products-container article {
-  width: 10rem;
-  text-align: center;
-  border: 0.08rem solid #ffffff81;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: #85625f7d;
-}
-
-.product-name {
-  margin-left: -0.3rem;
-}
-
-.product-listing-img img {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  display: block;
-}
-
-.product-listing-img:hover img {
-  box-shadow: 0 0 10px 8px rgba(255, 223, 175, 0.5);
-}
-
-.product-listing-img:focus img {
-  box-shadow: none;
-  opacity: 0.7;
-  transform: scale(1.03);
-}
-
-.product-price {
-  margin-bottom: 1rem;
-}
-
-
-
-
-
-.cart article {
-  margin-bottom: 1rem;
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-
-  border: 0.08rem solid #ffffff81;
-  background-color: #85625f7d;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.product-image {
-  display: block;
-  width: 8rem;
-  height: 8rem;
-
-  flex-shrink: 0;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.product-image.strawberry {
-  background-image: url("../Romantic_Strawberry_Cake.png");
-}
-
-.product-image.cherry-blossom {
-  background-image: url("../Cherry_Blossom_Girl_Cake.png");
-}
-
-.cart-summary {
-  max-width: 26rem;
-  margin-left: auto;
-  padding: 1.5rem;
-
-  border: 0.08rem solid #ffffff81;
-  border-radius: 0.6rem;
-  background-color: #75605f;
-}
-
-.summary-row {
+/* ── Nav ── */
+.nav-bar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.75rem;
-
-  font-size: 0.9rem;
+  align-items: center;
+  padding: 1.75rem 2rem 1.25rem;
 }
-
-.summary-row.total {
-  margin-top: 1rem;
-  padding-top: 0.75rem;
-  border-top: 0.08rem solid #ddd;
-
+.nav-left a {
+  font-family: "Styrene B", sans-serif;
+  font-weight: 700;
   font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.button-nav {
-  display: inline-block;
-  padding: 0.5rem;
-  color: #433732;
-  background-color: #FFF;
-  border-radius: 0.2rem;
+  letter-spacing: 0.05em;
   text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
-  font-size: 0.9rem;
-  outline: none;
+  color: #ffffff;
 }
-
-.button-nav:hover, .button-nav:focus {
-  background-color: #fad867;
-}
-
-.button-nav.product.viewing {
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-.form-field {
+.nav-right {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-right a {
+  font-family: "Styrene B", sans-serif;
+  font-weight: 400;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.nav-right a.active {
+  font-weight: 700;
+  opacity: 1;
+  padding-bottom: 2px;
 }
 
-.form-field-upper {
-  height: 3rem;
-  max-width: 20rem;
-  margin-left: 1rem;
-  padding: 0.3rem 1.2rem 1.2rem 1.2rem;
-
-  border: 0.08rem solid #ffffff81;
-  border-radius: 0.6rem;
-  background-color: #75605f;
+.nav-line {
+  height: 1px;
+  background: #ffffff;
+  opacity: 0.4;
+  margin: 0 1rem 0 66rem;
 }
 
-.form-field-under {
-  margin-top: 1rem;
-  max-width: 20rem;
-  margin-left: 1rem;
-  margin-bottom: 3rem;
-  padding: 1.5rem;
-
-  border: 0.08rem solid #ffffff81;
-  border-radius: 0.6rem;
-  background-color: #85625f7d;
+/* ── Index hero ── */
+.hero-title {
+  padding: 3rem 2.5rem 1rem;
 }
 
-.form-group {
-  flex: 0 0 25%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.2rem;
-}
-
-.form-group label {
-  margin-bottom: 0.3rem;
-  font-weight: 500;
+.hero-sub {
   font-size: 0.9rem;
-  color: #333;
+  color: #ffffff;
+  padding: 0 2.5rem 2rem 3rem;
 }
 
-#combined_elements .element {
-  max-width: 48rem;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-#combined_elements .element p {
-  margin-bottom: 1.2rem;
-}
-
-#combined_elements ul {
-  margin: 1rem 0 1.5rem 0;
-  padding-left: 1.2rem;
-  list-style: none;
-}
-
-#combined_elements ul li {
+/* ── Card sections ── */
+.card-section {
   position: relative;
+  padding: 2rem 0 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem 2.5rem;
+}
+
+/* Cards */
+.card {
+  display: block;
+  text-decoration: none;
+  background: #ffffff;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-img {
+  height: 300px;
+  background: #c8c5bf;
+}
+
+.card-info {
+  padding: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+/* Project cards */
+.project-card .card-info {
+  background: #FFD0BD;
+}
+.project-card .card-info h3 {
+  font-family: "Styrene B", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2a2a2a;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  letter-spacing: 0.06em;
+}
+.project-card .card-info .hashtags span {
+  font-size: 0.78rem;
+  color: #E8B7A4;
+  margin-right: 0.75rem;
+  transition: color 0.3s ease;
+}
+.project-card .card-info p {
+  font-size: 0.82rem;
+  color: #E8B7A4;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+/* Project hover */
+.project-card:hover .card-info .hashtags span {
+  color: #0012D7;
 }
 
-#combined_elements ul li::before {
-  content: "–";
+.project-card:hover .card-info p {
+  color: #1a1a1a;
+}
+
+/* Case study cards */
+.casestudy-card .card-info {
+  background: #FFF9CA;
+}
+.casestudy-card .card-info h3 {
+  font-family: "Styrene B", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.06em;
+}
+.casestudy-card .card-info .hashtags span {
+  font-size: 0.78rem;
+  color: #E0DAAD;
+  margin-right: 0.75rem;
+  transition: color 0.3s ease;
+}
+.casestudy-card .card-info p {
+  font-size: 0.82rem;
+  color: #E0DAAD;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+/* Case study hover */
+.casestudy-card:hover .card-info .hashtags span {
+  color: #0012D7;
+}
+.casestudy-card:hover .card-info p {
+  color: #1a1a1a;
+}
+
+/* ── Side labels ── */
+.side-label {
   position: absolute;
-  left: -1rem;
-  color: #FAD867;
+  writing-mode: vertical-rl;
+  font-family: "Styrene B", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #ffffff;
+  opacity: 0.35;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+.side-label.right {
+  right: 0.5rem;
+}
+.side-label.left {
+  left: 0.5rem;
 }
 
-#combined_elements img {
-  display: block;
-  width: 100%;
-  max-width: 42rem;
-  height: auto;
-  margin: 2rem auto 0 auto;
-  border-radius: 0.5rem;
-  border: 0.08rem solid #ffffff40;
+/* ── Footer ── */
+.footer {
+  background: #6f7c5a;
+  text-align: center;
+  padding: 4rem 2rem 3.5rem;
+}
+.footer h2 {
+  font-family: "Styrene B", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+.footer p {
+  font-size: 0.85rem;
+  color: #eeeeee;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  font-family: "Styrene B", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #333333;
+  background: #ffffff;
+  text-decoration: none;
+  padding: 0.55rem 1.4rem;
+  border-radius: 20px;
+  transition: background 0.2s ease;
+}
+.footer-links a:hover {
+  background: #f0f0f0;
 }
 
-.text-input:focus {
-  border-color: #0077ff;
-  box-shadow: 0 0 3px rgba(0, 119, 255, 0.5);
-}
+@media (max-width: 700px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.6rem; }
+  h4 { font-size: 1.4rem; }
+  h5 { font-size: 1.2rem; }
+  h6 { font-size: 1rem; }
+  p  { font-size: 0.9rem; }
 
-.additional-description {
-  margin-left: 1rem;
-}
+  .hero-title { padding: 2rem 1.5rem 0.75rem; }
+  .hero-sub   { padding: 0 1.5rem 1.5rem; }
 
-.potential-imagery {
-  margin-left: 1rem;
-}
+  .nav-bar  { padding: 1.2rem 1.2rem 1rem; }
+  .nav-line { margin: 0 1.2rem; }
+  .nav-right { gap: 1.2rem; }
+  .nav-right a { font-size: 0.72rem; }
 
-.fixed-image {
-  width: 28rem;
-  height: 10rem;
-  object-fit: cover;
-  display: block;
-  margin-left: 1rem;
-}
-
-.fixed-image.font {
-  width: 29rem;
-  height: 9rem;
-}
-
-.fixed-image.tall {
-  width: 33rem;
-  height: 27rem;
-}
-
-
-@media (max-width: 60rem) {
-    .top-bar {
-        height: 2rem;
-    }
-
-    .top-bar-inner {
-        font-size: 0.7rem;
-    }
-
-    .header-title {
-        font-size: 1.7rem;
-        margin-left: 0.7rem;
-    }
-
-    .header-paragraph {
-        font-size: 0.8rem;
-        margin-left: 0.7rem;
-    }
-
-    section {
-      margin-bottom: 1.2rem;
-      margin-left: 0.1rem;
-      margin-right: 0.1rem;
-    }
-
-    .element {
-      padding: 1rem;
-      border-radius: 0.8rem;
-    }
-
-    h1 {
-        font-size: 1.7rem;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 2.5rem;
-      margin-left: 0.7rem;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      margin-top: 0.7rem;
-    }
-
-    h4 {
-      font-size: 0.9rem;
-      margin-bottom: 0.15rem;
-    }
-
-    h5 {
-      font-size: 0.7rem;
-    }
-
-    p {
-      font-size: 0.6rem;
-      max-width: 40rem;
-      width: 100%;
-    }
-
-    ol, li {
-      font-size: 0.7rem;
-    }
-
-    .home-logo-img img,
-    .cart-logo-img img {
-      width: 1.5rem;
-      height: 1.5rem;
-    } 
-
-    .main-nav {
-      gap: 1.2rem;
-    }
-
-    .main-nav a {
-      font-size: 0.8rem;
-    }
-
-    .products-container article {
-      width: 8rem;
-      height: 16.5rem;
-      padding: 0.8rem;
-      border-radius: 0.4rem;
-    }
-
-    .product-listing-img img {
-      width: 100%;
-      height: 8.5rem;
-    }
-
-    .cart article {
-      margin-bottom: 0.7rem;
-      gap: 2.5rem;
-
-      padding: 0.8rem;
-      border-radius: 0.4rem;
-    }
-
-    .product-listing-img {
-      width: 6.5rem;
-      height: 6.5rem;
-    }
-
-    .cart-summary {
-      max-width: 22rem;
-      padding: 1.2rem;
-
-      border-radius: 0.5rem;
-    }
-
-    .summary-row {
-      margin-bottom: 0.65rem;
-      font-size: 0.759rem;
-    }
-
-    .summary-row.total {
-      margin-top: 0.85rem;
-      padding-top: 0.65rem;
-      font-size: 0.9rem;
-    }
-
-    .form-field-upper {
-      height: 2.5rem;
-      max-width: 18rem;
-      margin-left: 0.7rem;
-      padding: 0 1rem 1rem 1rem;
-      border-radius: 0.5rem;
-    }
-
-    .form-field-under {
-      margin-top: 1rem;
-      max-width: 18rem;
-      margin-left: 0.7rem;
-      margin-bottom: 2.5rem;
-      padding: 1.2rem;
-      border-radius: 0.5rem;
-    }
-
-    .form-group {
-      row-gap: 0.1rem;
-    }
-
-    .form-group label {
-      margin-bottom: 0.2rem;
-      font-size: 0.8rem;
-    }
-
-    .text-input-payment {
-      padding: 0.4rem 0.6rem;
-      border-radius: 0.4rem;
-      font-size: 0.8rem;
-      margin-bottom: 0.4rem;
-    }
-
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 1rem 1.5rem;
   }
 
-@media (max-width: 40rem) {
-    .top-bar {
-        height: 1.5rem;
-    }
-
-    .top-bar-inner {
-        font-size: 0.5rem;
-    }
-
-    section {
-      margin-bottom: 1rem;
-      margin-left: 0.05rem;
-      margin-right: 0.05rem;
-    }
-
-    .element {
-      padding: 0.7rem;
-      border-radius: 0.8rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      margin-top: 2.2rem;
-      margin-left: 0.4rem;
-    }
-
-    h3 {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-
-    h4 {
-      font-size: 0.8rem;
-      margin-bottom: 0.15rem;
-    }
-
-    h5 {
-      font-size: 0.7rem;
-    }
-
-    p {
-      font-size: 0.6rem;
-      max-width: 30rem;
-      width: 100%;
-    }
-
-    ol, li {
-      font-size: 0.6rem;
-    }
-
-    .home-logo-img img,
-    .cart-logo-img img {
-      width: 1.2rem;
-      height: 1.2rem;
-    } 
-
-    .main-nav {
-      gap: 0.8rem;
-    }
-
-    .main-nav a {
-      font-size: 0.68rem;
-    }
-
-    .products-container article {
-      width: 6rem;
-      padding: 0.6rem;
-      border-radius: 0.3rem;
-    }
-
-    .products-container article {
-      width: 7rem;
-      height: 14.6rem;
-      padding: 0.6rem;
-      border-radius: 0.4rem;
-    }
-
-    .product-listing-img img {
-      width: 100%;
-      height: 7rem;
-    }
-
-    .cart article {
-      margin-bottom: 0.7rem;
-      gap: 2.5rem;
-
-      padding: 0.8rem;
-      border-radius: 0.4rem;
-    }
-
-    .product-listing-img {
-      width: 6.5rem;
-      height: 6.5rem;
-    }
-
-    .cart-summary {
-      max-width: 22rem;
-      padding: 1.2rem;
-
-      border-radius: 0.5rem;
-    }
-
-    .summary-row {
-      margin-bottom: 0.65rem;
-      font-size: 0.759rem;
-    }
-
-    .summary-row.total {
-      margin-top: 0.85rem;
-      padding-top: 0.65rem;
-      font-size: 0.9rem;
-    }
-
-    .form-field-upper {
-      height: 2.5rem;
-      max-width: 18rem;
-      margin-left: 0.7rem;
-      padding: 0 1rem 1rem 1rem;
-      border-radius: 0.5rem;
-    }
-
-    .form-field-under {
-      margin-top: 1rem;
-      max-width: 18rem;
-      margin-left: 0.7rem;
-      margin-bottom: 2.5rem;
-      padding: 1.2rem;
-      border-radius: 0.5rem;
-    }
-
-    .form-group {
-      row-gap: 0.1rem;
-    }
-
-    .form-group label {
-      margin-bottom: 0.2rem;
-      font-size: 0.8rem;
-    }
-
-    .text-input-payment {
-      padding: 0.4rem 0.6rem;
-      border-radius: 0.4rem;
-      font-size: 0.8rem;
-      margin-bottom: 0.4rem;
-    }
-
+  .side-label { display: none; }
 }

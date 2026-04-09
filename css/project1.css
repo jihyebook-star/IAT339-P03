@@ -1,0 +1,98 @@
+.project-hero {
+  padding: 3.5rem 4rem 1rem;
+}
+
+.project-title {
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.project-intro {
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #cccccc;
+  max-width: 680px;
+}
+
+/* ── Content rows ── */
+.project-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 3rem 4rem 5rem;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.project-row.reverse {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+/* ── Image placeholders ── */
+.project-img {
+  background: #b5b3ac;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-img.large  { height: 280px; }
+.project-img.medium { height: 185px; }
+
+/* ── Row text ── */
+.project-text {
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #cccccc;
+}
+
+.footer {
+  background: #6f7c5a;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.footer-links a {
+  margin: 0 1rem;
+  padding: 0.8rem 1.5rem;
+  background: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+
+@media (max-width: 700px) {
+  .project-hero {
+    padding: 2.5rem 1.5rem 1rem;
+  }
+
+  .project-main {
+    padding: 2rem 1.5rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .project-row,
+  .project-row.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  /* mobile- image above text */
+  .project-row.reverse .project-img {
+    order: -1;
+  }
+}
+
