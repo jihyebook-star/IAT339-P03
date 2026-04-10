@@ -6,8 +6,26 @@
 
 @font-face {
   font-family: "Styrene B";
+  src: url("fonts/StyreneB-Thin-Trial-BF63f6cc84a4246.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Styrene B";
+  src: url("fonts/StyreneB-Light-Trial-BF63f6cbe64b47b.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Styrene B";
   src: url("fonts/StyreneB-Regular-Trial-BF63f6cbe9db1d5.otf") format("opentype");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Styrene B";
+  src: url("fonts/StyreneB-Medium-Trial-BF63f6cc85760c2.otf") format("opentype");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -31,23 +49,25 @@ body {
 
 h1 {
   font-family: "Styrene B", sans-serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #ffffff;
-  line-height: 1.05;
+  line-height: 1.25;
 }
 h2 {
   font-family: "Styrene B", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  color: #785141;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
   line-height: 1.1;
+  margin-bottom: 0.75rem;
+  padding: 0 0 1.5rem 0;
 }
 h3 {
   font-family: "Styrene B", sans-serif;
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: 400;
-  color: #ffffff;
+  color: #000000;
   line-height: 1.1;
 }
 h4 {
@@ -66,9 +86,9 @@ h5 {
 }
 h6 {
   font-family: "GT America Mono", monospace;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 500;
-  color: #1E40FF;
+  color: #E8B7A4;
   line-height: 1.4;
 }
 p {
@@ -79,58 +99,14 @@ p {
   color: #ffffff;
 }
 
-/* ── Nav ── */
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.75rem 2rem 1.25rem;
-}
-.nav-left a {
-  font-family: "Styrene B", sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  color: #ffffff;
-}
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.nav-right a {
-  font-family: "Styrene B", sans-serif;
-  font-weight: 400;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  color: #ffffff;
-  opacity: 0.6;
-  transition: opacity 0.2s ease;
-}
-.nav-right a.active {
-  font-weight: 700;
-  opacity: 1;
-  padding-bottom: 2px;
-}
-
-.nav-line {
-  height: 1px;
-  background: #ffffff;
-  opacity: 0.4;
-  margin: 0 1rem 0 66rem;
-}
-
 /* ── Index hero ── */
 .hero-title {
-  padding: 3rem 2.5rem 1rem;
+  padding: 3rem 2.5rem 1rem 10rem;
 }
 
 .hero-sub {
   font-size: 0.9rem;
-  color: #ffffff;
-  padding: 0 2.5rem 2rem 3rem;
+  padding: 0 2.5rem 2rem 10rem;
 }
 
 /* ── Card sections ── */
@@ -143,17 +119,19 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 0;
 }
 
 /* Cards */
 .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   background: #ffffff;
   cursor: pointer;
   transition: transform 0.25s ease;
 }
+
 .card:hover {
   transform: translateY(-3px);
 }
@@ -161,17 +139,38 @@ p {
 .card-img {
   height: 300px;
   background: #c8c5bf;
+  position: relative;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
 }
 
 .card-info {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
   transition: background 0.3s ease;
+  flex-grow: 1;
+  padding: 1.5rem;
 }
 
 /* Project cards */
+#projects {
+  padding-left: 1.5rem;
+  padding-right: 5rem;
+}
+
 .project-card .card-info {
   background: #FFD0BD;
 }
+
+.project-card .card-info .hashtags h6,
+.casestudy-card .card-info .hashtags h6 {
+  margin: 0;
+}
+
 .project-card .card-info h3 {
   font-family: "Styrene B", sans-serif;
   font-size: 1.1rem;
@@ -180,7 +179,8 @@ p {
   margin-bottom: 0.5rem;
   letter-spacing: 0.06em;
 }
-.project-card .card-info .hashtags span {
+
+.project-card .card-info .hashtags h6 {
   font-size: 0.78rem;
   color: #E8B7A4;
   margin-right: 0.75rem;
@@ -192,9 +192,18 @@ p {
   line-height: 1.6;
   margin-top: 0.5rem;
   transition: color 0.3s ease;
+  margin: 0;
 }
+
+.hashtags {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+
 /* Project hover */
-.project-card:hover .card-info .hashtags span {
+.project-card:hover .card-info .hashtags h6 {
   color: #0012D7;
 }
 
@@ -203,6 +212,11 @@ p {
 }
 
 /* Case study cards */
+#case-studies {
+  padding-left: 5rem;
+  padding-right: 1.5rem;
+}
+
 .casestudy-card .card-info {
   background: #FFF9CA;
 }
@@ -214,7 +228,7 @@ p {
   margin-bottom: 0.5rem;
   letter-spacing: 0.06em;
 }
-.casestudy-card .card-info .hashtags span {
+.casestudy-card .card-info .hashtags h6 {
   font-size: 0.78rem;
   color: #E0DAAD;
   margin-right: 0.75rem;
@@ -227,8 +241,9 @@ p {
   margin-top: 0.5rem;
   transition: color 0.3s ease;
 }
+
 /* Case study hover */
-.casestudy-card:hover .card-info .hashtags span {
+.casestudy-card:hover .card-info .hashtags h6 {
   color: #0012D7;
 }
 .casestudy-card:hover .card-info p {
@@ -238,9 +253,7 @@ p {
 /* ── Side labels ── */
 .side-label {
   position: absolute;
-  writing-mode: vertical-rl;
   font-family: "Styrene B", sans-serif;
-  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 3px;
   color: #ffffff;
@@ -250,61 +263,31 @@ p {
   pointer-events: none;
   user-select: none;
 }
+
 .side-label.right {
+  writing-mode: vertical-rl;
   right: 0.5rem;
-}
-.side-label.left {
-  left: 0.5rem;
+  font-size: 3.5rem;
+  color: #785141
 }
 
-/* ── Footer ── */
-.footer {
-  background: #6f7c5a;
-  text-align: center;
-  padding: 4rem 2rem 3.5rem;
-}
-.footer h2 {
-  font-family: "Styrene B", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 0.75rem;
-}
-.footer p {
-  font-size: 0.85rem;
-  color: #eeeeee;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.footer-links a {
-  font-family: "Styrene B", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 400;
-  color: #333333;
-  background: #ffffff;
-  text-decoration: none;
-  padding: 0.55rem 1.4rem;
-  border-radius: 20px;
-  transition: background 0.2s ease;
-}
-.footer-links a:hover {
-  background: #f0f0f0;
+.side-label.left {
+  writing-mode: vertical-rl;
+  transform: translateY(-50%) rotate(180deg);
+  left: 0.7rem;
+  font-size: 3.1rem;
+  color: #8F853F;
+  white-space: nowrap;
 }
 
 @media (max-width: 700px) {
   h1 { font-size: 3rem; }
   h2 { font-size: 2rem; }
-  h3 { font-size: 1.6rem; }
-  h4 { font-size: 1.4rem; }
-  h5 { font-size: 1.2rem; }
-  h6 { font-size: 1rem; }
-  p  { font-size: 0.9rem; }
+  h3 { font-size: 1.4rem; }
+  h4 { font-size: 1.2rem; }
+  h5 { font-size: 1rem; }
+  h6 { font-size: 0.8rem; }
+  p  { font-size: 0.7rem; }
 
   .hero-title { padding: 2rem 1.5rem 0.75rem; }
   .hero-sub   { padding: 0 1.5rem 1.5rem; }

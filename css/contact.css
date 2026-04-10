@@ -1,0 +1,116 @@
+main {
+  padding-left: 17rem;
+  padding-right: 17rem;
+}
+
+.contact-hero {
+  padding: 3rem 10.7rem 1.5rem;
+}
+
+.contact-title {
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.contact-sub {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  max-width: 610px;
+}
+
+/* ── Form card ── */
+.form-card {
+  background: #737966;
+  border-radius: 12px;
+  padding: 2.5rem 2rem 1.2rem;
+  margin: 1rem 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* ── Form rows ── */
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-row.two-col .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.15rem; */
+  width: 100%;
+}
+
+/* ── Labels ── */
+.form-group label {
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.75rem;
+  line-height: 0.7;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* ── Inputs & text area ── */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.65rem 0.9rem;
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.88rem;
+  color: #1a1a1a;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 0 2px #ffffff80;
+}
+
+.submit-btn {
+    background-color: white;
+    color: #737966;
+    border: none;
+    padding: 0.8rem 3rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0.5rem auto 0.5rem auto;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.submit-btn:hover{
+  background: #d5d5d5;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .contact-hero {
+    padding: 2rem 1.5rem 1rem;
+  }
+
+  .form-card {
+    margin: 1rem 1.5rem 3rem;
+    padding: 1.5rem 1.2rem;
+  }
+
+  .form-row.two-col {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

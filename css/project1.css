@@ -1,14 +1,9 @@
-.project-hero {
-  padding: 3.5rem 4rem 1rem;
+.project-main{
+  padding: 0 5rem 0 5rem;
 }
 
-.project-title {
-  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.05;
-  margin-bottom: 1.5rem;
+.project-hero {
+  padding: 3.5rem 4rem 1rem 10.7rem;
 }
 
 .project-intro {
@@ -16,8 +11,7 @@
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.75;
-  color: #cccccc;
-  max-width: 680px;
+  max-width: 650px;
 }
 
 /* ── Content rows ── */
@@ -25,7 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
-  padding: 3rem 4rem 5rem;
+  padding: 3rem 11rem 5rem;
 }
 
 .project-row {
@@ -59,21 +53,6 @@
   line-height: 1.8;
   color: #cccccc;
 }
-
-.footer {
-  background: #6f7c5a;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.footer-links a {
-  margin: 0 1rem;
-  padding: 0.8rem 1.5rem;
-  background: white;
-  border-radius: 20px;
-  text-decoration: none;
-}
-
 
 @media (max-width: 700px) {
   .project-hero {

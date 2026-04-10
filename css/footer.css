@@ -1,0 +1,46 @@
+.footer {
+  background: #67754C;
+  text-align: center;
+  padding: 3rem 2rem 3.5rem;
+}
+
+.footer h2 {
+  font-family: "Styrene B", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem 0 0.75rem 0;
+}
+
+.footer p {
+  font-family: "Styrene B", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 7.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-family: "Styrene B", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #4A6142;
+  background: #ffffff;
+  text-decoration: none;
+  padding: 0.9rem 3rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer-links a:hover {
+  background: #d5d5d5;
+}
