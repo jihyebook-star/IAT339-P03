@@ -1,0 +1,97 @@
+.cs-hero {
+  padding: 3.5rem 4rem 4rem 11rem;
+}
+
+.cs-title {
+ margin-bottom: 1.5rem; 
+ max-width: 50rem;
+ font-size: 3.75rem;
+}
+
+.cs-intro {
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 55rem;
+}
+
+.cs-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 2rem 5rem;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.cs-block {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.cs-two-col {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+
+.cs-img {
+  background: #b5b3ac;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.cs-img-full {
+  width: 100%;
+  height: 22.5rem;
+}
+
+.img1 {
+  background-image: url("../img/cs1-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  background-image: url("../img/cs1-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  background-image: url("../img/cs1-3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img4 {
+  background-image: url("../img/cs1-4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.cs-main p {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: #cccccc;
+}
+
+.my-video {
+  background: #b5b3ac;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+@media (max-width: 40rem) {
+  .cs-main {
+    padding: 1rem 1.5rem 3rem;
+  }
+
+  .cs-two-col {
+    flex-direction: column;
+  }
+}

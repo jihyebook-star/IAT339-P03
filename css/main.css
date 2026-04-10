@@ -155,21 +155,16 @@ p {
 }
 
 .permit-extension-img {
-  background-image: url("../img/permitExtension.png");
+  background-image: url("../img/studyPermitExtensionHome.png");
   background-size: cover;
   background-position: center;
 }
 
 .canvas-img {
-  background-image: url("../img/canvas.png");
+  background-image: url("../img/canvasHome.png");
   background-size: cover;
   background-position: center;
 }
-
-
-
-
-
 
 .card-title {
   position: absolute;
