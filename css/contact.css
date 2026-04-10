@@ -32,6 +32,24 @@ main {
   gap: 0.9rem;
 }
 
+.overlay-img3{
+  position: absolute;
+  width: 15%;
+  top: 40%;
+  left: 15%;
+}
+.overlay-img4 {
+  position: absolute;
+  width: 15%;
+  top: 62.5%;
+  left: 10.5%;
+}.overlay-img5 {
+  position: absolute;
+  width: 15%;
+  top: 30%;
+  left: 71.5%;
+}
+
 /* ── Form rows ── */
 .form-row {
   display: flex;
