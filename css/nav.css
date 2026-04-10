@@ -6,12 +6,19 @@
 }
 .nav-left a {
   font-family: "Styrene B", sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
   letter-spacing: 0.05em;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
   text-decoration: none;
   color: #ffffff;
 }
+.nav-left a:hover {
+  font-weight: 700;
+  opacity: 1;
+}
+
 .nav-right {
   display: flex;
   align-items: center;

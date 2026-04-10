@@ -6,12 +6,30 @@
   padding: 3.5rem 4rem 1rem 10.7rem;
 }
 
+.project-title {
+ margin-bottom: 1.5rem; 
+}
+
+.pet-adoption-link {
+  color: #AAC479;
+  text-decoration: underline;
+  transition: color 0.2s ease, background-color 0.2s ease; 
+}
+
+.pet-adoption-link:hover,
+.pet-adoption-link:focus{
+  color: white;
+  background-color: #AAC479;
+  text-decoration: none;
+  outline: none;
+}
+
 .project-intro {
   font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.75;
-  max-width: 650px;
+  max-width: 49rem;
 }
 
 /* ── Content rows ── */
@@ -36,22 +54,49 @@
 /* ── Image placeholders ── */
 .project-img {
   background: #b5b3ac;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   width: 100%;
   display: block;
   object-fit: cover;
 }
 
-.project-img.large  { height: 280px; }
-.project-img.medium { height: 185px; }
+.project-img.large  { height: 20rem; }
+.project-img.medium { height: 25rem; }
+
+.my-video {
+  background: #b5b3ac;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.img1 {
+  background-image: url("../img/p1-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  background-image: url("../img/p1-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  background-image: url("../img/p1-3.png");
+  background-size: cover;
+  background-position: center;
+}
 
 /* ── Row text ── */
 .project-text {
   font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 2;
   color: #cccccc;
+  max-width: 30rem;
 }
 
 @media (max-width: 700px) {

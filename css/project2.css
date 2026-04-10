@@ -1,0 +1,128 @@
+.project-main{
+  padding: 0 5rem 0 5rem;
+}
+
+.project-hero {
+  padding: 3.5rem 4rem 1rem 10.7rem;
+}
+
+.project-title {
+ margin-bottom: 1.5rem; 
+}
+
+.le-cakery-link {
+  color: #AAC479;
+  text-decoration: underline;
+  transition: color 0.2s ease, background-color 0.2s ease; 
+}
+
+.le-cakery-link:hover,
+.le-cakery-link:focus{
+  color: white;
+  background-color: #AAC479;
+  text-decoration: none;
+  outline: none;
+}
+
+.project-intro {
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.75;
+  max-width: 49rem;
+}
+
+/* ── Content rows ── */
+.project-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 3rem 11rem 5rem;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.project-row.reverse {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+/* ── Image placeholders ── */
+.project-img {
+  background: #b5b3ac;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-img.large  { height: 20rem; }
+.project-img.medium { height: 25rem; }
+
+.my-video {
+  background: #b5b3ac;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.img1 {
+  background-image: url("../img/p2-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  background-image: url("../img/p2-2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  background-image: url("../img/p2-3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img4 {
+  background-image: url("../img/p2-4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ── Row text ── */
+.project-text {
+  font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #cccccc;
+  max-width: 30rem;
+}
+
+@media (max-width: 700px) {
+  .project-hero {
+    padding: 2.5rem 1.5rem 1rem;
+  }
+
+  .project-main {
+    padding: 2rem 1.5rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .project-row,
+  .project-row.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  /* mobile- image above text */
+  .project-row.reverse .project-img {
+    order: -1;
+  }
+}
+
