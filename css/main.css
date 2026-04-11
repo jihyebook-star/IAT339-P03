@@ -41,22 +41,27 @@
   font-style: normal;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
   background-color: #252D22;
   color: #ffffff;
 }
 
+/* ── Typography ── */
 h1 {
   font-family: "Styrene B", sans-serif;
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 5vw, 4.5rem);
   font-weight: 700;
   color: #ffffff;
   line-height: 1.25;
 }
 h2 {
   font-family: "Styrene B", sans-serif;
-  font-size: 1.75rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   font-weight: 700;
   color: #ffffff;
   line-height: 1.1;
@@ -65,51 +70,49 @@ h2 {
 }
 h3 {
   font-family: "Styrene B", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 2vw, 2rem);
   font-weight: 400;
   color: #ffffff;
   line-height: 1.1;
 }
 h4 {
   font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 45px;
+  font-size: clamp(1.5rem, 4vw, 2.8125rem);
   font-weight: 700;
   color: #ffffff;
   line-height: 1.15;
 }
 h5 {
   font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 40px;
+  font-size: clamp(1.25rem, 3.5vw, 2.5rem);
   font-weight: 600;
   color: #ffffff;
   line-height: 1.2;
 }
 h6 {
   font-family: "GT America Mono", monospace;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 1.2vw, 1rem);
   font-weight: 500;
   color: #E8B7A4;
   line-height: 1.4;
 }
 p {
   font-family: "Styrene B", sans-serif;
-  font-size: 1rem;
+  font-size: clamp(0.8125rem, 1.2vw, 1rem);
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.5625rem;
   color: #ffffff;
 }
 
-/* ── Index hero ── */
 .hero-title {
   padding: 3rem 2.5rem 1rem 10rem;
 }
 
 .hero-sub {
-  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
   padding: 0 2.5rem 2rem 10rem;
 }
 
-/* ── Card sections ── */
 .card-section {
   position: relative;
   padding: 2rem 0 3rem;
@@ -122,7 +125,6 @@ p {
   padding: 1.5rem 0;
 }
 
-/* Cards */
 .card {
   display: flex;
   flex-direction: column;
@@ -133,13 +135,31 @@ p {
 }
 
 .card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.1875rem);
+}
+
+.card:hover .card-title {
+  color: #1a1a1a;
 }
 
 .card-img {
-  height: 20rem;
+  height: clamp(10rem, 22vw, 20rem);
   background: #c8c5bf;
   position: relative;
+  overflow: hidden;
+}
+
+.card-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover .card-img::after {
+  opacity: 0;
 }
 
 .pet-adoption-img {
@@ -171,16 +191,17 @@ p {
   bottom: 1rem;
   left: 1rem;
   margin: 0;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  z-index: 1;
 }
 
 .card-info {
-  padding: 1.5rem 1.5rem 0rem 1.5rem;
   transition: background 0.3s ease;
   flex-grow: 1;
   padding: 1.5rem;
 }
 
-/* Project cards */
 #projects {
   padding-left: 1.5rem;
   padding-right: 5rem;
@@ -197,7 +218,7 @@ p {
 
 .project-card .card-info h3 {
   font-family: "Styrene B", sans-serif;
-  font-size: 1.1rem;
+  font-size: clamp(0.8125rem, 1.2vw, 1.1rem);
   font-weight: 700;
   color: #2a2a2a;
   margin-bottom: 0.5rem;
@@ -205,28 +226,27 @@ p {
 }
 
 .project-card .card-info .hashtags h6 {
-  font-size: 0.92rem;
+  font-size: clamp(0.75rem, 1vw, 0.92rem);
   color: #E8B7A4;
   margin: 0 0.75rem 0.5rem 0.25rem;
   transition: color 0.3s ease;
 }
+
 .project-card .card-info p {
-  font-size: 0.92rem;
+  font-size: clamp(0.75rem, 1vw, 0.92rem);
   color: #E8B7A4;
   line-height: 1.6;
-  margin-top: 0.5rem;
-  transition: color 0.3s ease;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .hashtags {
   display: flex;
   gap: 0.6rem;
   flex-wrap: wrap;
+  margin-bottom: 0.5rem;
 }
 
-
-/* Project hover */
 .project-card:hover .card-info .hashtags h6 {
   color: #0012D7;
 }
@@ -235,7 +255,7 @@ p {
   color: #1a1a1a;
 }
 
-/* Case study cards */
+/* ── Case study cards ── */
 #case-studies {
   padding-left: 5rem;
   padding-right: 1.5rem;
@@ -244,42 +264,44 @@ p {
 .casestudy-card .card-info {
   background: #FFF9CA;
 }
+
 .casestudy-card .card-info h3 {
   font-family: "Styrene B", sans-serif;
-  font-size: 1.1rem;
+  font-size: clamp(0.8125rem, 1.2vw, 1.1rem);
   font-weight: 700;
   color: #2a2a2a;
   margin-bottom: 0.5rem;
   letter-spacing: 0.06em;
 }
+
 .casestudy-card .card-info .hashtags h6 {
-  font-size: 0.92rem;
+  font-size: clamp(0.75rem, 1vw, 0.92rem);
   color: #E0DAAD;
   margin: 0 0.75rem 0 0.2rem;
   transition: color 0.3s ease;
 }
+
 .casestudy-card .card-info p {
-  font-size: 0.92rem;
+  font-size: clamp(0.75rem, 1vw, 0.92rem);
   color: #E0DAAD;
   line-height: 1.6;
   margin-top: 0.5rem;
   transition: color 0.3s ease;
 }
 
-/* Case study hover */
 .casestudy-card:hover .card-info .hashtags h6 {
   color: #0012D7;
 }
+
 .casestudy-card:hover .card-info p {
   color: #1a1a1a;
 }
 
-/* ── Side labels ── */
 .side-label {
   position: absolute;
   font-family: "Styrene B", sans-serif;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 0.1875rem;
   color: #ffffff;
   opacity: 0.45;
   top: 50%;
@@ -291,40 +313,188 @@ p {
 .side-label.right {
   writing-mode: vertical-rl;
   right: 0.5rem;
-  font-size: 3.5rem;
-  color: #785141
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+  color: #785141;
 }
 
 .side-label.left {
   writing-mode: vertical-rl;
   transform: translateY(-50%) rotate(180deg);
   left: 0.7rem;
-  font-size: 3.1rem;
+  font-size: clamp(1.3rem, 3vw, 3.1rem);
   color: #8F853F;
   white-space: nowrap;
 }
 
-@media (max-width: 700px) {
-  h1 { font-size: 3rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.4rem; }
-  h4 { font-size: 1.2rem; }
-  h5 { font-size: 1rem; }
-  h6 { font-size: 0.8rem; }
-  p  { font-size: 0.7rem; }
+/* ── Television ── */
+@media (min-width: 120rem) {
+  html {
+    font-size: 22px;
+  }
 
-  .hero-title { padding: 2rem 1.5rem 0.75rem; }
-  .hero-sub   { padding: 0 1.5rem 1.5rem; }
+  .hero-title {
+    padding: 5rem 4rem 1.5rem 14rem;
+  }
 
-  .nav-bar  { padding: 1.2rem 1.2rem 1rem; }
-  .nav-line { margin: 0 1.2rem; }
-  .nav-right { gap: 1.2rem; }
-  .nav-right a { font-size: 0.72rem; }
+  .hero-sub {
+    padding: 0 4rem 3rem 14rem;
+  }
 
+  #projects {
+    padding-left: 3rem;
+    padding-right: 9rem;
+  }
+
+  #case-studies {
+    padding-left: 9rem;
+    padding-right: 3rem;
+  }
+
+  .card-img {
+    height: clamp(22rem, 18vw, 32rem);
+  }
+
+  .grid {
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+}
+
+/* ── Desktop ── */
+@media (min-width: 90rem) {
+  html {
+    font-size: 18px;
+  }
+
+  .hero-title {
+    padding: 4rem 3rem 1.25rem 12rem;
+  }
+
+  .hero-sub {
+    padding: 0 3rem 2.5rem 12rem;
+  }
+
+  #projects {
+    padding-left: 2rem;
+    padding-right: 7rem;
+  }
+
+  #case-studies {
+    padding-left: 7rem;
+    padding-right: 2rem;
+  }
+
+  .card-img {
+    height: clamp(18rem, 20vw, 26rem);
+  }
+}
+
+/* ── Tablet ── */
+@media (max-width: 63.9375rem) {
+  .hero-title {
+    padding: 2.5rem 2rem 1rem 5rem;
+  }
+
+  .hero-sub {
+    padding: 0 2rem 2rem 5rem;
+  }
+
+  #projects {
+    padding-left: 1rem;
+    padding-right: 3.5rem;
+  }
+
+  #case-studies {
+    padding-left: 3.5rem;
+    padding-right: 1rem;
+  }
+
+  .card-img {
+    height: clamp(10rem, 25vw, 18rem);
+  }
+
+  .side-label.right {
+    font-size: clamp(1.25rem, 3vw, 2.5rem);
+  }
+
+  .side-label.left {
+    font-size: clamp(1.1rem, 2.8vw, 2.3rem);
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  .hero-title {
+    padding: 2rem 1.5rem 0.75rem 1.5rem;
+  }
+ 
+  .hero-sub {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+ 
+  #projects {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+ 
+  #case-studies {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+ 
   .grid {
     grid-template-columns: 1fr;
     padding: 1rem 1.5rem;
+    gap: 1.25rem;
+  }
+ 
+  .card-img {
+    height: clamp(12rem, 50vw, 18rem);
+  }
+ 
+  .side-label {
+    display: none;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 29.9375rem) {
+  html {
+    font-size: 15px;
   }
 
-  .side-label { display: none; }
+  .hero-title {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+  }
+
+  .hero-sub {
+    padding: 0 1rem 1.25rem 1rem;
+  }
+
+  #projects,
+  #case-studies {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+
+  .card-img {
+    height: clamp(10rem, 55vw, 14rem);
+  }
+
+  .card-info {
+    padding: 1rem;
+  }
+
+  .card-section {
+    padding: 1.25rem 0 2rem;
+  }
+
+  .side-label {
+    display: none;
+  }
 }

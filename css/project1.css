@@ -1,5 +1,5 @@
-.project-main{
-  padding: 0 5rem 0 5rem;
+html {
+  font-size: 16px;
 }
 
 .project-hero {
@@ -7,17 +7,18 @@
 }
 
 .project-title {
- margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 5vw, 3.75rem);
 }
 
 .pet-adoption-link {
   color: #AAC479;
   text-decoration: underline;
-  transition: color 0.2s ease, background-color 0.2s ease; 
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .pet-adoption-link:hover,
-.pet-adoption-link:focus{
+.pet-adoption-link:focus {
   color: white;
   background-color: #AAC479;
   text-decoration: none;
@@ -26,13 +27,12 @@
 
 .project-intro {
   font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.9rem;
+  font-size: clamp(0.75rem, 1.1vw, 0.9rem);
   font-weight: 400;
   line-height: 1.75;
   max-width: 49rem;
 }
 
-/* ── Content rows ── */
 .project-main {
   display: flex;
   flex-direction: column;
@@ -51,7 +51,6 @@
   grid-template-columns: 0.9fr 1.1fr;
 }
 
-/* ── Image placeholders ── */
 .project-img {
   background: #b5b3ac;
   border-radius: 0.5rem;
@@ -60,8 +59,8 @@
   object-fit: cover;
 }
 
-.project-img.large  { height: 20rem; }
-.project-img.medium { height: 25rem; }
+.project-img.large  { height: clamp(12rem, 18vw, 20rem); }
+.project-img.medium { height: clamp(14rem, 22vw, 25rem); }
 
 .my-video {
   background: #b5b3ac;
@@ -89,19 +88,76 @@
   background-position: center;
 }
 
-/* ── Row text ── */
 .project-text {
   font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.95rem;
+  font-size: clamp(0.75rem, 1.1vw, 0.95rem);
   font-weight: 400;
   line-height: 2;
   color: #cccccc;
   max-width: 30rem;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 90rem) {
+  html {
+    font-size: 18px;
+  }
+
   .project-hero {
-    padding: 2.5rem 1.5rem 1rem;
+    padding: 4rem 5rem 1.25rem 13rem;
+  }
+
+  .project-main {
+    padding: 3.5rem 13rem 6rem;
+    gap: 4rem;
+  }
+
+  .project-img.large  { height: clamp(16rem, 18vw, 24rem); }
+  .project-img.medium { height: clamp(18rem, 20vw, 28rem); }
+}
+
+@media (min-width: 120rem) {
+  html {
+    font-size: 22px;
+  }
+
+  .project-hero {
+    padding: 5rem 6rem 1.5rem 15rem;
+  }
+
+  .project-main {
+    padding: 4rem 15rem 7rem;
+    gap: 5rem;
+  }
+
+  .project-row {
+    gap: 4rem;
+  }
+
+  .project-img.large  { height: clamp(20rem, 16vw, 28rem); }
+  .project-img.medium { height: clamp(22rem, 18vw, 32rem); }
+}
+
+@media (max-width: 63.9375rem) {
+  .project-hero {
+    padding: 2.5rem 3rem 1rem 6rem;
+  }
+
+  .project-main {
+    padding: 2.5rem 5rem 4rem;
+    gap: 3rem;
+  }
+
+  .project-row {
+    gap: 2rem;
+  }
+
+  .project-img.large  { height: clamp(10rem, 22vw, 18rem); }
+  .project-img.medium { height: clamp(12rem, 26vw, 20rem); }
+}
+
+@media (max-width: 47.9375rem) {
+  .project-hero {
+    padding: 2rem 1.5rem 1rem;
   }
 
   .project-main {
@@ -112,11 +168,45 @@
   .project-row,
   .project-row.reverse {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
-  /* mobile- image above text */
   .project-row.reverse .project-img {
     order: -1;
   }
+
+  .project-text {
+    max-width: 100%;
+  }
+
+  .project-img.large  { height: clamp(12rem, 50vw, 18rem); }
+  .project-img.medium { height: clamp(14rem, 55vw, 20rem); }
 }
 
+@media (max-width: 29.9375rem) {
+  html {
+    font-size: 15px;
+  }
+
+  .project-hero {
+    padding: 1.5rem 1rem 0.75rem;
+  }
+
+  .project-main {
+    padding: 1.25rem 1rem 2.5rem;
+    gap: 2rem;
+  }
+
+  .project-row,
+  .project-row.reverse {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-row.reverse .project-img {
+    order: -1;
+  }
+
+  .project-img.large  { height: clamp(10rem, 55vw, 14rem); }
+  .project-img.medium { height: clamp(12rem, 60vw, 16rem); }
+}

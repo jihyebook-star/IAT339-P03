@@ -21,7 +21,6 @@ main {
   margin-left: 0.5rem;
 }
 
-/* ── Form card ── */
 .form-card {
   background: #737966;
   border-radius: 12px;
@@ -32,7 +31,6 @@ main {
   gap: 0.9rem;
 }
 
-/* ── Form rows ── */
 .form-row {
   display: flex;
   gap: 1.5rem;
@@ -45,11 +43,9 @@ main {
 .form-group {
   display: flex;
   flex-direction: column;
-  /* gap: 0.15rem; */
   width: 100%;
 }
 
-/* ── Labels ── */
 .form-group label {
   font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.75rem;
@@ -60,7 +56,6 @@ main {
   text-align: center;
 }
 
-/* ── Inputs & text area ── */
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -98,7 +93,6 @@ main {
   background: #d5d5d5;
 }
 
-/* ── Responsive ── */
 @media (max-width: 640px) {
   .contact-hero {
     padding: 2rem 1.5rem 1rem;

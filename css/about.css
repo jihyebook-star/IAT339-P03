@@ -20,6 +20,10 @@
   font-weight: 500;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Styrene B", "Helvetica Neue", Arial, sans-serif;
   background-color: #252D22;
@@ -33,13 +37,12 @@ main {
 
 .page-title {
   font-family: "Styrene B", sans-serif;
-  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-size: clamp(2rem, 5vw, 3.8rem);
   font-weight: 700;
   line-height: 1.1;
   padding: 3rem 10.7rem 1rem;
 }
 
-/* ── About grid ── */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -58,27 +61,21 @@ main {
   padding-top: 2rem;
 }
 
-/* ── Image placeholders ── */
 .about-img {
   background: #b5b3ac;
   border-radius: 0.5rem;
   width: 100%;
   display: block;
   object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
 
-.about-img.tall  { height: 23rem; }
-.about-img.short { height: 17rem; }
+.about-img.tall  { height: clamp(14rem, 22vw, 23rem); }
+.about-img.short { height: clamp(10rem, 17vw, 17rem); }
 
 .img1 {
   background-image: url("../img/about1.jpg");
-}
-
-.overlay-img1 {
-  position: absolute;
-  width: 50%;
-  top: -35%;
-  left: -35%;
 }
 
 .img2 {
@@ -90,6 +87,18 @@ main {
   background-image: url("../img/about3.jpg");
 }
 
+.img4 {
+  background-image: url("../img/about2.jpg");
+  position: relative;
+}
+
+.overlay-img1 {
+  position: absolute;
+  width: 50%;
+  top: -35%;
+  left: -35%;
+}
+
 .overlay-img2 {
   position: absolute;
   width: 50%;
@@ -97,49 +106,181 @@ main {
   right: -35%;
 }
 
-.img4 {
-  background-image: url("../img/about2.jpg");
-  position: relative;
-}
-
-.about-img {
-  background-size: cover;
-  background-position: center;
-}
-
-/* ── Body text ── */
 .about-text {
   font-family: "Styrene B", sans-serif;
-  font-size: 0.85rem;
+  font-size: clamp(0.75rem, 1.1vw, 0.9rem);
   font-weight: 400;
   line-height: 1.75;
 }
 
+/* ── Desktop ── */
+@media (min-width: 90rem) {
+  html {
+    font-size: 18px;
+  }
 
-@media (max-width: 640px) {
+  .page-title {
+    padding: 4rem 12rem 1.25rem;
+  }
+
+  main {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .about-img.tall  { height: clamp(20rem, 20vw, 28rem); }
+  .about-img.short { height: clamp(14rem, 15vw, 20rem); }
+}
+
+/* ── Televisioon ── */
+@media (min-width: 120rem) {
+  html {
+    font-size: 22px;
+  }
+
+  .page-title {
+    padding: 5rem 14rem 1.5rem;
+  }
+
+  main {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .about-grid {
+    gap: 3rem;
+    padding: 1.5rem 2.5rem 4rem;
+  }
+
+  .about-col {
+    gap: 2rem;
+  }
+
+  .about-img.tall  { height: clamp(24rem, 18vw, 34rem); }
+  .about-img.short { height: clamp(16rem, 14vw, 24rem); }
+}
+
+/* ── Tablet ── */
+@media (max-width: 63.9375rem) {
+  main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .page-title {
+    padding: 2.5rem 5rem 1rem;
+  }
+
+  .about-grid {
+    gap: 1.5rem;
+    padding: 1rem 1rem 2.5rem;
+  }
+
+  .about-col {
+    gap: 1.2rem;
+    padding: 0.75rem;
+  }
+
+  .about-col.left {
+    padding-top: 1.5rem;
+  }
+
+  .about-img.tall  { height: clamp(12rem, 26vw, 20rem); }
+  .about-img.short { height: clamp(9rem, 20vw, 15rem); }
+
+  .overlay-img1 {
+    width: 45%;
+    top: -25%;
+    left: -25%;
+  }
+
+  .overlay-img2 {
+    width: 45%;
+    right: -25%;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .page-title {
     padding: 2rem 1.5rem 1rem;
-    font-size: 2rem;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
-    padding: 0 1rem 2rem;
+    gap: 1.25rem;
+    padding: 0.75rem 0 2rem;
   }
 
-  .about-col.right {
-    padding-top: 0;
+  .about-col {
+    padding: 0.5rem 0;
+    gap: 1rem;
   }
 
-  .nav-bar {
-    padding: 1.2rem 1.2rem 1rem;
+  .about-col.left {
+    padding-top: 0.5rem;
   }
 
-  .nav-line {
-    margin: 0 1.2rem;
+  .about-img.tall  { height: clamp(14rem, 55vw, 22rem); }
+  .about-img.short { height: clamp(10rem, 45vw, 16rem); }
+
+  .overlay-img1 {
+    width: 40%;
+    top: -20%;
+    left: -15%;
   }
 
-  .nav-right {
-    gap: 1.2rem;
+  .overlay-img2 {
+    width: 40%;
+    right: -15%;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 29.9375rem) {
+  html {
+    font-size: 15px;
+  }
+
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-title {
+    padding: 1.5rem 1rem 0.75rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem 0 1.5rem;
+  }
+
+  .about-col {
+    padding: 0.25rem 0;
+    gap: 0.875rem;
+  }
+
+  .about-col.left {
+    padding-top: 0.25rem;
+  }
+
+  .about-img.tall  { height: clamp(12rem, 60vw, 18rem); }
+  .about-img.short { height: clamp(9rem, 50vw, 14rem); }
+
+  .overlay-img1 {
+    width: 35%;
+    top: -15%;
+    left: -10%;
+  }
+
+  .overlay-img2 {
+    width: 35%;
+    right: -10%;
   }
 }
